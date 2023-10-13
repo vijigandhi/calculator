@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="demo.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="innercontainer">
+                <div class="inputbox">
+                    <input type="text" id="text" placeholder="0">
+                </div>
+                <div class="innercontainer1">
+                    <button id="clear" onclick="text.value = '' ">c</button>
+                    <button id="delete" onclick="text.value=text.value.toString().slice(0,-1)">Del</button>
+                    <button id="mod" onclick="text.value += '%' ">%</button>
+                    <button id="div"  onclick="text.value += '/' " >/</button>
+                </div>
+                <div class="innercontainer2">
+                    <button onclick="text.value += '7' ">7</button >
+                    <button onclick="text.value += '8' ">8</button>
+                    <button onclick="text.value += '9' ">9</button >
+                    <button id="mul" onclick="text.value += '*' ">*</button>
+                </div>
+                <div class="innercontainer3">
+                    <button onclick="text.value += '4' ">4</button>
+                    <button onclick="text.value += '5' ">5</button>
+                    <button onclick="text.value += '6' ">6</button>
+                    <button id="sub" onclick="text.value += '-' ">-</button>
+                </div>
+                <div class="innercontainer4">
+                    <button onclick="text.valuBye += '1' ">1</button>
+                    <button onclick="text.value += '2' ">2</button>
+                    <button onclick="text.value += '3' ">3</button>
+                    <button id="add" onclick="text.value += '+' ">+</button>
+                </div>
+                <div class="innercontainer5">
+                    <div class="dotzerobtn">
+                        <button id="dot" onclick="text.value += '.' "><b>.</b></button>
+                        <button id="zero" onclick="text.value += '0' " >0</button>
+                    </div>
+                    <div class="equal">
+                        <button id="equalto" onclick="text.value=eval(text.value)">=</button>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
